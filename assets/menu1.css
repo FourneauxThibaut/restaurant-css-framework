@@ -1,0 +1,47 @@
+h1 {
+  margin-left: 250px;
+  color: #008037;
+}
+
+h2 {
+  color: #008037;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 400px;
+}
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*.menus img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}*/
+.bleu {
+  background-color: #7f3e1a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jaune {
+  background-color: #f4e038;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green {
+  background-color: #008037;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=menu1.css.map */
