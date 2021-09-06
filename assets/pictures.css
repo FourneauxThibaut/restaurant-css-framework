@@ -31,11 +31,79 @@ main .gallery section div > div {
   overflow: hidden;
 }
 
+main .gallery section div > div img {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 main .gallery section div > div img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.pagination_rounded,
+.pagination_square {
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.pagination_rounded ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination_rounded ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+.pagination_rounded ul li a {
+  float: left;
+  color: #008037;
+  border-radius: 50%;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 1px solid #e0e0e0;
+}
+
+.pagination_rounded ul li a:hover {
+  background-color: #008037;
+  color: #fff;
+  border: 1px solid #008037;
+}
+
+.pagination_rounded li:first-child {
+  margin-left: 0px;
+}
+
+.pagination_rounded .prev {
+  margin-left: 0px;
+  border-radius: 35px;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.pagination_rounded .prev i {
+  margin-right: 10px;
+}
+
+.pagination_rounded .next {
+  border-radius: 35px;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.visible-xs {
+  display: none !important;
 }
 
 @media screen and (max-width: 1000px) {
