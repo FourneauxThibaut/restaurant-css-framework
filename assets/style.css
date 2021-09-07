@@ -49,12 +49,56 @@ body {
   font-size: 62,5%;
 }
 
-.logo {
-  width: 100px;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-item a:hover {
-  color: #008037 !important;
+::-moz-selection {
+  background-color: #f08c2b;
+  color: white;
+}
+
+::selection {
+  background-color: #f08c2b;
+  color: white;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header .logo {
+  max-height: 100px;
+  margin: 5px 10px 5px 0;
+}
+
+header .navbar {
+  padding: 0 100px;
+}
+
+header .navbar .navbar-brand {
+  margin-right: 80px;
+}
+
+header .nav-item {
+  margin: 25px 20px;
+}
+
+header .nav-item a {
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+header .nav-item a:hover {
+  color: #f08c2b;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .active {
+  background-color: #f08c2b !important;
 }
 
 main {
