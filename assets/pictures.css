@@ -3,13 +3,51 @@
 }
 
 ::-moz-selection {
-  background-color: #008037;
+  background-color: #f08c2b;
   color: white;
 }
 
 ::selection {
-  background-color: #008037;
+  background-color: #f08c2b;
   color: white;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header .logo {
+  max-height: 100px;
+  margin: 5px 10px 5px 0;
+}
+
+header .navbar {
+  padding: 0 100px;
+}
+
+header .navbar .navbar-brand {
+  margin-right: 80px;
+}
+
+header .nav-item {
+  margin: 25px 20px;
+}
+
+header .nav-item a {
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+header .nav-item a:hover {
+  color: #f08c2b;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .active {
+  background-color: #f08c2b !important;
 }
 
 main .gallery {
@@ -68,7 +106,7 @@ main .gallery section div > div img:hover {
 
 .pagination_rounded ul li a {
   float: left;
-  color: #008037;
+  color: #f08c2b;
   border-radius: 50%;
   line-height: 30px;
   height: 30px;
@@ -80,9 +118,9 @@ main .gallery section div > div img:hover {
 }
 
 .pagination_rounded ul li a:hover {
-  background-color: #008037;
+  background-color: #f08c2b;
   color: #fff;
-  border: 1px solid #008037;
+  border: 1px solid #f08c2b;
 }
 
 .pagination_rounded li:first-child {
@@ -106,6 +144,34 @@ main .gallery section div > div img:hover {
   width: 90px;
   height: 34px;
   line-height: 34px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  color: white;
+  background-color: #1d1d1d;
+  position: relative;
+}
+
+footer a {
+  color: white !important;
+  list-style: inherit;
+  text-decoration: inherit !important;
+  padding: 0px 10px;
+}
+
+footer .git {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
 }
 
 .visible-xs {

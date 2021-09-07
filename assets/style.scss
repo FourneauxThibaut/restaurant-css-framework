@@ -10,13 +10,47 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 body{
     font-size: 62,5%;
 }
-.logo{
-    width: 100px;
-}
-.nav-item a{
 
-    &:hover{
-        color: $green !important;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+::selection{
+    background-color: $Orange;
+    color: white;
+}
+header{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    .logo{
+        max-height: 100px;
+        margin: 5px 10px 5px 0;
+    }
+
+    .navbar{
+        padding: 0 100px;
+
+        .navbar-brand{
+            margin-right: 80px;
+        }
+    }
+
+    .nav-item{
+        margin: 25px 20px;
+    
+        a{
+            color: white; 
+            transition-duration: 0.3s;
+
+            &:hover{
+                color: $Orange;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .active{
+        background-color: $Orange !important;
     }
 }
 

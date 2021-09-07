@@ -2,13 +2,49 @@ $Vert: #008037;
 $Brun: #7f3e1a;
 $Orange: #f08c2b;
 $Jaune: #f4e038;
+$noir: #1d1d1d;
 
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 ::selection{
-    background-color: $Vert;
+    background-color: $Orange;
     color: white;
+}
+header{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    .logo{
+        max-height: 100px;
+        margin: 5px 10px 5px 0;
+    }
+
+    .navbar{
+        padding: 0 100px;
+
+        .navbar-brand{
+            margin-right: 80px;
+        }
+    }
+
+    .nav-item{
+        margin: 25px 20px;
+    
+        a{
+            color: white; 
+            transition-duration: 0.3s;
+
+            &:hover{
+                color: $Orange;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .active{
+        background-color: $Orange !important;
+    }
 }
 
 main{
@@ -61,7 +97,7 @@ main{
     
         a{
             float: left;
-            color: $Vert;
+            color: $Orange;
             border-radius: 50%;
             line-height: 30px;
             height: 30px;
@@ -72,9 +108,9 @@ main{
             border: 1px solid #e0e0e0;
 
             &:hover {
-                background-color: $Vert;
+                background-color: $Orange;
                 color: #fff;
-                border: 1px solid $Vert
+                border: 1px solid $Orange
             }   
         }
     }
@@ -99,6 +135,29 @@ main{
         width: 90px;
         height: 34px;
         line-height: 34px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+    background-color: $noir;
+    position: relative;
+    
+    a{
+        color: white !important;
+        list-style: inherit;
+        text-decoration: inherit !important;
+        padding: 0px 10px;
+    }
+
+    .git {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
     }
 }
 
