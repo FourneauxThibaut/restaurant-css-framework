@@ -42,8 +42,9 @@ main{
 .pagination_rounded,
 .pagination_square {
     display: inline-block;
-    margin-left: 400px;
-    margin-top: 50px
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination_rounded{
@@ -66,6 +67,7 @@ main{
             height: 30px;
             width: 30px;
             text-align: center;
+            text-decoration: none;
             margin-bottom: 40px;
             border: 1px solid #e0e0e0;
 
