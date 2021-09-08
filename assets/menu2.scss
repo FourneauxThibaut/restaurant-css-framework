@@ -11,48 +11,7 @@ $noir: #1d1d1d;
     background-color: $Orange;
     color: white;
 }
-header{
-    font-weight: bold;
-    font-size: 1.2rem;
 
-    .logo{
-        max-height: 100px;
-        margin: 5px 10px 5px 0;
-    }
-
-    .navbar{
-        padding: 0 100px;
-
-        .navbar-brand{
-            margin-right: 80px;
-        }
-    }
-
-    .nav-item{
-        margin: 25px 20px;
-    
-        a{
-            color: white; 
-            transition-duration: 0.3s;
-
-            &:hover{
-                color: $Orange;
-                transition-duration: 0.5s;
-            }
-        }
-    }
-
-    .active{
-        background-color: $Orange !important;
-    }
-}
-
-footer a{
-    color: white !important;
-    list-style: inherit;
-    text-decoration: inherit !important;
-    padding: 0px 10px;
-  }
 h1 {
     text-align: center;
     color:  #008037;
