@@ -16,7 +16,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 ::selection{
-    background-color: $Orange;
+    background-color: $orange;
     color: white;
 }
 header{
@@ -24,8 +24,8 @@ header{
     font-size: 1.2rem;
 
     .logo{
-        max-height: 100px;
-        margin: 5px 10px 5px 0;
+        max-height: 45px;
+        margin: 15px 10px 15px 0;
     }
 
     .navbar{
@@ -44,14 +44,14 @@ header{
             transition-duration: 0.3s;
 
             &:hover{
-                color: $Orange;
+                color: $orange;
                 transition-duration: 0.5s;
             }
         }
     }
 
     .active{
-        background-color: $Orange !important;
+        background-color: $orange !important;
     }
 }
 
@@ -73,26 +73,31 @@ main{
 }
 
 //---------- footer -----------
-
 footer {
     display: flex;
     flex-direction: row;
     padding: 10px;
     color: white;
-    background-color: black;
+    background-color: $noir;
     position: relative;
     
-}
+    a{
+        color: white !important;
+        list-style: inherit;
+        text-decoration: inherit !important;
+        padding: 0px 10px;
+        transition-duration: 0.3s;
 
-.git {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: white;
+        &:hover{
+            color: $orange !important;
+            transition-duration: 0.5s;
+        }
+    }
+
+    .git {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+    }
 }
-footer a{
-    color: white !important;
-    list-style: inherit;
-    text-decoration: inherit !important;
-    padding: 0px 10px;
-  }

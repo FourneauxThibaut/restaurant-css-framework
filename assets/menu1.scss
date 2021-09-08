@@ -16,8 +16,8 @@ header{
     font-size: 1.2rem;
 
     .logo{
-        max-height: 100px;
-        margin: 5px 10px 5px 0;
+        max-height: 45px;
+        margin: 15px 10px 15px 0;
     }
 
     .navbar{
@@ -47,12 +47,6 @@ header{
     }
 }
 
-footer a{
-    color: white !important;
-    list-style: inherit;
-    text-decoration: inherit !important;
-    padding: 0px 10px;
-  }
 h1 {
     text-align: center;
     color:  #008037;
@@ -110,20 +104,32 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 footer {
     display: flex;
     flex-direction: row;
     padding: 10px;
     color: white;
-    background-color: black;
+    background-color: $noir;
     position: relative;
     
-}
+    a{
+        color: white !important;
+        list-style: inherit;
+        text-decoration: inherit !important;
+        padding: 0px 10px;
+        transition-duration: 0.3s;
 
-.git {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: white;
-}
+        &:hover{
+            color: $Orange !important;
+            transition-duration: 0.5s;
+        }
+    }
 
+    .git {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+    }
+}

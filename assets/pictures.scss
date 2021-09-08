@@ -16,8 +16,8 @@ header{
     font-size: 1.2rem;
 
     .logo{
-        max-height: 100px;
-        margin: 5px 10px 5px 0;
+        max-height: 45px;
+        margin: 15px 10px 15px 0;
     }
 
     .navbar{
@@ -105,12 +105,14 @@ main{
             text-align: center;
             text-decoration: none;
             margin-bottom: 40px;
-            border: 1px solid #e0e0e0;
+            border: 2px solid #e0e0e0;
+            transition-duration: 0.3s;
 
             &:hover {
                 background-color: $Orange;
                 color: #fff;
-                border: 1px solid $Orange
+                border: 2px solid $Orange;
+                transition-duration: 0.6s;
             }   
         }
     }
@@ -125,10 +127,6 @@ main{
         width: 90px;
         height: 34px;
         line-height: 34px;
-        
-        i {
-            margin-right: 10px;
-        }
     }
     .next {
         border-radius: 35px;
@@ -151,6 +149,12 @@ footer {
         list-style: inherit;
         text-decoration: inherit !important;
         padding: 0px 10px;
+        transition-duration: 0.3s;
+
+        &:hover{
+            color: $Orange !important;
+            transition-duration: 0.5s;
+        }
     }
 
     .git {
@@ -164,8 +168,58 @@ footer {
 .visible-xs {
     display: none !important
 }
+@media (max-width: 1500px){
+    .gallery-burgers, .gallery-environment{
+        .row{
+            height: 300px !important;
+        }
+    }
+    .gallery-milkshake{
+        .row{
+            height: 600px !important;
+        }
+    }
 
-@media screen and (max-width: 1000px){
+}
+@media (max-width: 1400px){
+    .gallery-burgers, .gallery-environment{
+        .row{
+            height: 250px !important;
+        }
+    }
+    .gallery-milkshake{
+        .row{
+            height: 550px !important;
+        }
+    }
+}
+@media (max-width: 1300px){
+    header{
+
+        .navbar{
+            padding: 0 50px;
+    
+            .navbar-brand{
+                margin-right: 35px;
+            }
+        }
+
+        .nav-item{
+            margin: 20px 10px;
+        }
+    }
+    .gallery-burgers, .gallery-environment{
+        .row{
+            height: 200px !important;
+        }
+    }
+    .gallery-milkshake{
+        .row{
+            height: 500px !important;
+        }
+    }
+}
+@media(max-width: 1000px){
     main{
         .gallery h2{
             font-size: 2.5rem;
@@ -173,7 +227,15 @@ footer {
         
     }
 }
-@media screen and (max-width: 700px){
+@media (max-width: 767px){
+    main{
+        .gallery h2{
+            font-size: 2rem;
+        }
+        
+    }
+}
+@media (max-width: 700px){
     main{
         .gallery h2{
             font-size: 2rem;
