@@ -3,6 +3,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  background-color: rgb(255, 210, 194);
 }
 .upBlock {
   display: flex;
@@ -81,5 +82,12 @@ body {
 }
 
 .container {
-  margin-top: 15%;
+  margin-top: 20%;
+}
+
+.WOOD {
+  font-size: 80px;
+  text-align:justify;
+  color: rgb(255, 108, 55);
+  font-family:'Dancing Script', cursive;
 }
