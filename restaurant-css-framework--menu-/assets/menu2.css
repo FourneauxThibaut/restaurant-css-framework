@@ -113,78 +113,153 @@ header .active {
 
 .maintitle p {
   text-align: center;
-  font-size: 1.5rem;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-}
-
-.menu .mainmenu {
+.mainmenu {
   border: solid 1px #008037;
   padding: 20px;
+  margin-top: 20px;
 }
 
-.menu .mainmenu .icons {
+.mainmenu .icons {
   margin: 0 auto;
   display: block;
-  width: 50px;
 }
 
-.menu .mainmenu h2 {
+.mainmenu h2 {
   text-align: center;
   color: #f08c2b;
-  font-size: 2rem;
 }
 
-/*body{
+@media only screen and (max-width: 600px) {
+  .maintitle h1 {
+    font-size: 1rem;
+  }
+  .maintitle p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    min-width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .menu .mainmenu .icons {
+    width: 40px;
+  }
+  .menu .mainmenu h2 {
+    font-size: 1.5rem;
+  }
+  .menu table td {
+    width: 120%;
+  }
+  .menu table th {
+    text-align: right;
+  }
 }
-*/
-/*
-main {
-    flex-grow: 2;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .maintitle h1 {
+    font-size: 2rem;
+  }
+  .maintitle p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    min-width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .menu .mainmenu .icons {
+    width: 40px;
+  }
+  .menu .mainmenu h2 {
+    font-size: 1.5rem;
+  }
+  .menu table td {
+    width: 120%;
+  }
+  .menu table th {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .maintitle p {
+    font-size: 1.5rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    border: solid 1px #008037;
+    padding: 20px;
+  }
+  .menu .mainmenu .icons {
     margin: 0 auto;
-    width: 45%;
+    display: block;
+    width: 50px;
+  }
+  .menu .mainmenu h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 2rem;
+  }
 }
 
-.menus {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0 70px 0;
-    height: 500px;
-    width: 640px;
-    padding: 10px;
-    //padding-top: -50px;
-    background-color: white;
-    //box-shadow: 10px 5px 5px black;
-   // border: solid;
-    border-radius: 5%;
-
-}
-*/
 .bleu {
   background-color: #7f3e1a;
   font-family: Arial, Helvetica, sans-serif;

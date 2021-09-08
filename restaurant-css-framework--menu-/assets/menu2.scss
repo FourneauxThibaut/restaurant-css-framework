@@ -51,32 +51,143 @@ header{
     }
 }
 //--------fin du header------------
-
-//-------maintitle----------
 .maintitle{
-        padding-top: 20px;
-    .mainlogo{
-        display: block;
-        margin: 0 auto;
+    padding-top: 20px;
+        .mainlogo{
+            display: block;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
     }
-    h1{
-        text-align: center;
-    }
-    p{
-        text-align: center;
-        font-size: 1.5rem;
 
+    .mainmenu{
+        border: solid 1px $Vert;
+        padding: 20px;
+        margin-top: 20px;
+        .icons{
+            margin: 0 auto;
+            display: block;
+        }
+        h2{
+            text-align: center;
+            color: $Orange;
+        }
+    }
+
+
+//-------responsive-----------
+
+
+@media only screen and(max-width: 600px){
+    .maintitle{
+        h1{
+        font-size: 1rem;
+        }
+        p{
+        font-size: 1rem; 
+        }
+    }
+
+//------menu------------
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+
+        .mainmenu{
+            min-width: 80%;
+            padding: 20px;
+            margin-top: 20px;
+            .icons{
+                width: 40px;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+
+        table{
+            td{
+                width: 120%;
+            }
+            th{
+                text-align: right;
+            }
+        }
+    }
+
+} 
+//---
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    //-------maintitle----------
+    .maintitle{
+        h1{
+        font-size: 2rem;
+        }
+        p{
+        font-size: 1rem; 
+        }
+    }
+
+//------menu------------
+
+    .menu{
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    align-items: stretch;
+	    align-content: stretch;
+        .mainmenu{
+            min-width: 80%;
+            padding: 20px;
+            margin-top: 20px;
+            .icons{
+                width: 40px;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+
+        table{
+            td{
+                width: 120%;
+            }
+            th{
+                text-align: right;
+            }
+        }
     }
 }
 
+//--
+@media only screen and (min-width: 768px){
+    //-------maintitle----------
+    .maintitle{
+            p{
+                font-size: 1.5rem;
+            }
+    }
+
 //------menu------------
-.menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
+    .menu{
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: stretch;
+	    align-content: stretch;
+
         .mainmenu{
             border: solid 1px $Vert;
             padding: 20px;
@@ -85,46 +196,16 @@ header{
                 display: block;
                 width: 50px;
             }
-            h2{
-                text-align: center;
-                color: $Orange;
-                font-size: 2rem;
-            }
+        h2{
+            text-align: center;
+            color: $Orange;
+            font-size: 2rem;
         }
+    }
+}
 }
 
-/*body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-*/
-/*
-main {
-    flex-grow: 2;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    margin: 0 auto;
-    width: 45%;
-}
-
-.menus {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0 70px 0;
-    height: 500px;
-    width: 640px;
-    padding: 10px;
-    //padding-top: -50px;
-    background-color: white;
-    //box-shadow: 10px 5px 5px black;
-   // border: solid;
-    border-radius: 5%;
-
-}
-*/
+//-----fin du responsive---------------
 
 
 
@@ -170,10 +251,3 @@ footer a{
     text-decoration: inherit !important;
     padding: 0px 10px;
   }
-
-
-
-
-
-
-
