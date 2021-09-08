@@ -3,7 +3,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(253, 239, 235);
+  background-color: rgb(236, 236, 236);
 }
 .upBlock {
   display: flex;
@@ -68,7 +68,6 @@ resize: none;
   border-width: 3px;
   
 }
-
 body {
   background-image: url(../asset/img/Tracé\ 1.png), url(../asset/img/Tracé\ 2.png);
   background-position:top 150px right 10px, center;
