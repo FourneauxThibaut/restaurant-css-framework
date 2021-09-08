@@ -1,40 +1,94 @@
-<html>
-    <head>
-        <!DOCTYPE html>
-        <meta charset="utf-8" />
-        <title>CONTACT</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./stylesheet/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-      <section class="Titre">
-        <h1 class="WOOD">Wood's Burger</h1>
-      </section>
-
-      <form action="action-page">
-          <div class="container">
-            <div class="upBlock">
-              <div class="hamburger">
-                <img src="asset/img/dessus bruger.png" alt="image pain"/>
-                <div class="inputs">
-                  <input type="text" name="name" required="required" placeholder="NAME" />
-                  <input type="text" name="first name" required="required" placeholder="FIRST NAME" />
-                  <input type="text" name="e-mail" required="required" placeholder="E MAIL" />
-                </div>
-                <img src="asset/img/dessous burger.png" alt="pain du dessous" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <title>Contact</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./stylesheet/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-expand-xl flex-column-sm flex-column-xs sticky-top fixed-top">
+      <img src="./Assets/wood's burger.svg" class="logo" alt="logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pictures.html">Picture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our-restaurants.html">restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="Titre">
+      <h1 class="WOOD">Wood's Burger</h1>
+    </section>
+    <form action="action-page">
+        <div class="container">
+          <div class="upBlock">
+            <div class="hamburger">
+              <img src="asset/img/dessus bruger.png" alt="image pain"/>
+              <div class="inputs">
+                <input type="text" name="name" required="required" placeholder="NAME" />
+                <input type="text" name="first name" required="required" placeholder="FIRST NAME" />
+                <input type="text" name="e-mail" required="required" placeholder="E MAIL" />
               </div>
-              <textarea placeholder="comment" class="comment"></textarea>
-            </div>  
-            <div class="submitContainer">
-            <input type="submit" class="sendButton"></input>
+              <img src="asset/img/dessous burger.png" alt="pain du dessous" />
             </div>
+            <textarea placeholder="comment" class="comment"></textarea>
+          </div>  
+          <div class="submitContainer">
+          <input type="submit" class="sendButton"></input>
           </div>
-      </form>
-    </body>
-  </html>
+        </div>
+    </form>
+  </main> 
+  <footer>
+    <ul class="flex">
+      <li>
+        <a href="https://github.com/FourneauxThibaut">Thibaut	Fourneaux </a>
+      </li>
+      <li>
+        <a href="https://github.com/saralaloux">Sara	Laloux </a>
+      </li>
+      <li>
+        <a href="https://github.com/Kaleidosport"> Anthony  Lambert </a>
+      </li>
+      <li>
+        <a href="https://github.com/kawtagan"> Romain	Berthaux </a>
+      </li>
+      <li>
+        <a href="https://github.com/LudmilaKowalski"> Ludmila Kowalski </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>&copy; Wood's Burgers - 2021</p>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

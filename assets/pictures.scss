@@ -2,7 +2,7 @@ $Vert: #008037;
 $Brun: #7f3e1a;
 $Orange: #f08c2b;
 $Jaune: #f4e038;
-$noir: #1d1d1d;
+$noir: #2b2b2b;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 h1{
@@ -25,6 +25,8 @@ h1{
 header{
     font-weight: bold;
     font-size: 1.2rem;
+    color: white;
+    background-color: $noir;
 
     .logo{
         width: 240px;
@@ -102,6 +104,58 @@ main{
             }
         }
     }
+    .pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Rubik', sans-serif;
+    display: inline-flex;
+    position: relative;
+}
+.pagination li a.page-link{
+    color: $Orange;
+    background-color: transparent;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 28px;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 10px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover{
+    color: #fff;
+    background-color: $Orange;
+}
+.pagination li a.page-link:before{
+    content: attr(data-hover);
+    color: rgba(255,255,255,0.2);
+    font-size: 80px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover:before,
+.pagination li.active a.page-link:before{
+    opacity: 1;
+    top: 10px;
+}
+@media only screen and (max-width: 480px){
+    .pagination{ display: block; }
+    .pagination li{
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
 }
 
 footer {

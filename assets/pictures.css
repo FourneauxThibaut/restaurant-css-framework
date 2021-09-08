@@ -24,6 +24,8 @@ h1 {
 header {
   font-weight: bold;
   font-size: 1.2rem;
+  color: white;
+  background-color: #2b2b2b;
 }
 
 header .logo {
@@ -103,6 +105,73 @@ main .gallery .gallery-milkshake img {
   height: 620px !important;
 }
 
+main .pagination-outer {
+  text-align: center;
+}
+
+main .pagination {
+  font-family: 'Rubik', sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+main .pagination li a.page-link {
+  color: #f08c2b;
+  background-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 28px;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px 10px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+main .pagination li.active a.page-link,
+main .pagination li a.page-link:hover,
+main .pagination li.active a.page-link:hover {
+  color: #fff;
+  background-color: #f08c2b;
+}
+
+main .pagination li a.page-link:before {
+  content: attr(data-hover);
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 80px;
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+main .pagination li a.page-link:hover:before,
+main .pagination li.active a.page-link:before {
+  opacity: 1;
+  top: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  main .pagination {
+    display: block;
+  }
+  main .pagination li {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +184,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: white;
-  background-color: #1d1d1d;
+  background-color: #2b2b2b;
   position: relative;
 }
 

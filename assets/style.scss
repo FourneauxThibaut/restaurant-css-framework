@@ -2,7 +2,7 @@ $green : #008037;
 $brown : #7f3e1a;
 $orange : #f08c2b;
 $yellow : #f4e038;
-$noir: #1d1d1d;
+$noir: #2b2b2b;
 $police: 'Dancing Script', cursive;
 
 
@@ -12,20 +12,32 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 body{
     font-size: 62,5%;
 }
+h1{
+    font-family: 'Dancing Script', cursive;
+    color: $orange;
+    font-size: 5rem;
+    margin-top: 60px;
+    text-align: center;
+}
 
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 ::selection{
     background-color: $orange;
     color: white;
 }
+
 header{
     font-weight: bold;
     font-size: 1.2rem;
+    color: white;
+    background-color: $noir;
 
     .logo{
-        width: 220px;
+        width: 240px;
+        height: auto;
         margin: 20px 70px 15px 0;
     }
 
@@ -54,36 +66,13 @@ header{
     .active{
         background-color: $orange !important;
     }
-
-    .navbar{
-        padding: 0 100px;
-
-        .navbar-brand{
-            margin-right: 80px;
-        }
-    }
-
-    .nav-item{
-        margin: 25px 20px;
-    
-        a{
-            color: white; 
-            transition-duration: 0.3s;
-
-            &:hover{
-                color: $orange;
-                transition-duration: 0.5s;
-            }
-        }
-    }
-
-    .active{
-        background-color: $orange;
-    }
 }
 
 //------- carousel---------
 
+.main-title{
+    margin: 10px 0 50px 0;
+}
 .carousel{
     margin: 0 auto;
     width: 90%;
@@ -105,7 +94,7 @@ header{
 
 
 .logo-title{
-    padding-top: 20px;
+    margin: 20px 0;
     display: block;
     width: 50px;
 }
@@ -118,14 +107,15 @@ header{
     .main-title{
         text-align: center;
         display: block;
-            h1{
-                color: $green;
+
+        h1{
+            color: $green;
             font-size: 3rem;
             font-family: 'Dancing Script', cursive;
             padding-top: 20px;
-            }
-            
-            h2{
+        }
+        
+        h2{
             font-size: 1.5rem;
             color: black;
         }
@@ -133,19 +123,22 @@ header{
 }
 //--------commentaires-----------------
     .comments{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap-reverse;
-      justify-content: space-between;
-      align-items: stretch;
-      align-content: stretch;
+        padding: 35px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
     }
     article{
-      padding: 30px;
-      margin: 20px;
-      border: solid 1px $green;
+        padding: 30px;
+        margin: 20px;
+        border: solid 2px $green;
+        border-radius: 5px;
 
         h2{
+            margin: 20px 0;
             text-align: center;
             color: $orange;
             font-weight: bolder;
@@ -155,9 +148,9 @@ header{
     }
  
   .logo-title{
-    width: 15%;
-    margin: 0 auto;
-}
+        width: 15%;
+        margin: 0 auto 40px;
+    }
 
 
 
@@ -220,7 +213,7 @@ header{
 
         padding: 30px;
         margin: 20px;
-        border: solid 1px $green;
+        border: 2px solid $green;
 
         h2{
             text-align: center;
@@ -231,20 +224,43 @@ header{
     }
 }
 
-//--------footer------------
+//---------comments------------------
+
+.icons{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+
+
 footer {
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: space-between;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: white;
     background-color: $noir;
     position: relative;
-    text-align: center;
     
+    ul, ol{
+        list-style: none;
+    }
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        li{
+            margin: 25px 30px;
+        }
+    }
+
     a{
         color: white !important;
         list-style: inherit;
@@ -257,32 +273,101 @@ footer {
             transition-duration: 0.5s;
         }
     }
+}
 
-    .git {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        color: white;
+.visible-xs {
+    display: none !important
+}
+
+@media (max-width: 1335px) {
+    footer{
+        ul{
+            li{
+                margin: 25px 20px;
+            }
+        }
     }
 }
 
+@media (max-width: 1300px){
+    header{
 
-//---------comments------------------
+        .navbar{
+            padding: 0 50px;
+    
+            .navbar-brand{
+                margin-right: 35px;
+            }
+        }
 
-.icons{
-    display: block;
-    width: 50px;
-    margin: 0 auto;
+        .nav-item{
+            margin: 20px 10px;
+        }
+    }
 }
 
+@media (max-width: 1220px){
+    footer{
+        ul{
+            li{
+                margin: 25px 10px;
+            }
+        }
+    }
+}
 
+@media (max-width: 1100px) {
+    header{
+        .logo{
+            width: 200px;
+            margin: 20px 50px 15px 0;
+        }
+        .navbar{
+            padding: 0 50px;
+    
+            .navbar-brand{
+                margin-right: 25px;
+            }
+        }
 
+        .nav-item{
+            margin: 20px 8px;
+        }
+    }
 
+    footer {
+        flex-direction: column;
+        text-align: center;
 
- 
- footer a{
-    color: white !important;
-    list-style: inherit;
-    text-decoration: none;
-    padding: 0px 10px;
+        .flex{
+            flex-direction: column;
+        }
+
+        ul{
+
+            margin: 15px;
+
+            li{
+                margin: 8px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    header{
+        .logo{
+            width: 180px;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        .logo{
+            width: 150px;
+            margin: 0 5px;
+        }
+    }
 }
