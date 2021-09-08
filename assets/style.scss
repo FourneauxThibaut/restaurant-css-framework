@@ -3,6 +3,7 @@ $brown : #7f3e1a;
 $orange : #f08c2b;
 $yellow : #f4e038;
 $noir: #1d1d1d;
+$police: 'Dancing Script', cursive;
 
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -53,33 +54,196 @@ header{
     .active{
         background-color: $orange !important;
     }
+
+    .navbar{
+        padding: 0 100px;
+
+        .navbar-brand{
+            margin-right: 80px;
+        }
+    }
+
+    .nav-item{
+        margin: 25px 20px;
+    
+        a{
+            color: white; 
+            transition-duration: 0.3s;
+
+            &:hover{
+                color: $orange;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .active{
+        background-color: $orange;
+    }
 }
 
-main{
-    color: white;
-    position: relative;
-    .burger_image{
-        position: absolute;
-        z-index: -2;
-    }
-    h1{
-        font-size: 2rem;
-        text-align: center ;
+//------- carousel---------
+
+.carousel{
+    margin: 0 auto;
+    width: 90%;
+}
+.carousel-inner{
+
+    .title{
+        color: $green;
+        font-size: 7rem;
+        font-family: $police;
+        padding-top: 20px;
     }
     h2{
-        font-size: 1rem;
         text-align: center;
+        font-size: 1.5rem;
+    }
+}
+//---------fin du carousel---------------
+
+
+.logo-title{
+    padding-top: 20px;
+    display: block;
+    width: 50px;
+}
+
+
+  //---------responsive-----------
+
+@media only screen and (max-width: 768px){
+
+    .main-title{
+        text-align: center;
+        display: block;
+            h1{
+                color: $green;
+            font-size: 3rem;
+            font-family: 'Dancing Script', cursive;
+            padding-top: 20px;
+            }
+            
+            h2{
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
+}
+//--------commentaires-----------------
+    .comments{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap-reverse;
+      justify-content: space-between;
+      align-items: stretch;
+      align-content: stretch;
+    }
+    article{
+      padding: 30px;
+      margin: 20px;
+      border: solid 1px $green;
+
+        h2{
+            text-align: center;
+            color: $orange;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+    }
+ 
+  .logo-title{
+    width: 15%;
+    margin: 0 auto;
+}
+
+
+
+//------- carousel---------
+
+.carousel{
+  margin: 0 auto;
+  width: 90%;
+}
+.carousel-inner{
+
+  .title{
+      color: $green;
+      font-size: 4rem;
+      font-family: 'Dancing Script', cursive;
+      padding-top: 20px;
+  }
+  h2{
+      text-align: center;
+      font-size: 1.5rem;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+
+    .main-title{
+        text-align: center;
+            h1{
+                color: $green;
+            font-size: 5rem;
+            font-family: 'Dancing Script', cursive;
+            padding-top: 20px;
+            }
+            
+            h2{
+            font-size: 1.5rem;
+            color: black;
+            }
+    }
+}
+ 
+
+//--------------article comments-------------
+
+.comments{
+    margin: 0 auto;
+    width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+
+    article{
+
+
+        padding: 30px;
+        margin: 20px;
+        border: solid 1px $green;
+
+        h2{
+            text-align: center;
+            color: $orange;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
     }
 }
 
-//---------- footer -----------
+//--------footer------------
 footer {
     display: flex;
-    flex-direction: row;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-between;
     padding: 10px;
     color: white;
     background-color: $noir;
     position: relative;
+    text-align: center;
     
     a{
         color: white !important;
@@ -100,4 +264,25 @@ footer {
         top: 10px;
         color: white;
     }
+}
+
+
+//---------comments------------------
+
+.icons{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+
+
+
+
+ 
+ footer a{
+    color: white !important;
+    list-style: inherit;
+    text-decoration: none;
+    padding: 0px 10px;
 }

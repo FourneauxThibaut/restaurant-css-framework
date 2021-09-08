@@ -53,24 +53,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-::-moz-selection {
-  background-color: #f08c2b;
-  color: white;
-}
-
-::selection {
-  background-color: #f08c2b;
-  color: white;
-}
-
 header {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 header .logo {
-  max-height: 45px;
-  margin: 15px 10px 15px 0;
+  max-height: 100px;
+  margin: 5px 10px 5px 0;
 }
 
 header .navbar {
@@ -98,62 +88,215 @@ header .nav-item a:hover {
 }
 
 header .active {
-  background-color: #f08c2b !important;
+  background-color: #f08c2b;
 }
 
-main {
-  color: white;
-  position: relative;
+.carousel {
+  margin: 0 auto;
+  width: 90%;
 }
 
-main .burger_image {
-  position: absolute;
-  z-index: -2;
+.carousel-inner .title {
+  color: #008037;
+  font-size: 7rem;
+  font-family: "Dancing Script", cursive;
+  padding-top: 20px;
 }
 
-main h1 {
-  font-size: 2rem;
+.carousel-inner h2 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
-main h2 {
-  font-size: 1rem;
-  text-align: center;
+.carousel-inner .logo-title {
+  padding-top: 20px;
+  display: block;
+  width: 50px;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 10px;
-  color: white;
-  background-color: #1d1d1d;
-  position: relative;
+@media only screen and (max-width: 768px) {
+  .carousel-inner .main-title {
+    text-align: center;
+    display: block;
+  }
+  .carousel-inner .main-title h1 {
+    color: #008037;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+  }
+  .carousel-inner .main-title h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .carousel-inner .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .carousel-inner article {
+    padding: 30px;
+    margin: 20px;
+    border: solid 1px #008037;
+  }
+  .carousel-inner article h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  .carousel-inner .logo-title {
+    width: 15%;
+    margin: 0 auto;
+  }
+  .carousel-inner .carousel {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .carousel-inner .carousel-inner .title {
+    color: #008037;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+  }
+  .carousel-inner .carousel-inner h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .carousel-inner footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    position: relative;
+    text-align: center;
+  }
+  .carousel-inner .git {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+  }
 }
 
-footer a {
-  color: white !important;
-  list-style: inherit;
-  text-decoration: inherit !important;
-  padding: 0px 10px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+@media only screen and (min-width: 768px) {
+  .main-title {
+    text-align: center;
+  }
+  .main-title h1 {
+    color: #008037;
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+  }
+  .main-title h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .comments {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .comments article {
+    padding: 30px;
+    margin: 20px;
+    border: solid 1px #008037;
+  }
+  .comments article h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    position: relative;
+    text-align: center;
+  }
+  .git {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+  }
 }
 
-footer a:hover {
-  color: #f08c2b !important;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+.icons {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
 }
 
-footer .git {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: white;
-}
-/*# sourceMappingURL=style.css.map */
+/*
+ footer a{
+    color: white !important;
+    list-style: inherit;
+    text-decoration: inherit !important;
+    padding: 0px 10px;
+  }
+  */
