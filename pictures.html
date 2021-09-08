@@ -8,11 +8,8 @@
     <title>Pictures</title>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-expand-xl sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/images/logo.png" class="logo" alt="logo">
-      Wood's burgers
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-expand-xl flex-column-sm flex-column-xs sticky-top fixed-top navbar-dark bg-dark">
+    <img src="./Assets/wood's burger.svg" class="logo" alt="logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,10 +36,12 @@
 </header>
 <body>
     <main>
+      <h1>Wood's burgers</h1>
         <section class="gallery">
+
             <section class="gallery-environment">
                 <h2>Our restaurants</h2>
-                  <div class="row" style="height: 350px;">
+                  <div class="row">
                       <div class="col-md-4 p-3 w-100 h-100">
                         <img src="https://cdn.pixabay.com/photo/2015/06/30/18/36/st-826688_960_720.jpg" 
                         class="w-100 h-100 shadow-1-strong rounded mb-4"
@@ -59,7 +58,7 @@
                         alt="">
                       </div>
                   </div>
-                  <div class="row" style="height: 500px;">
+                  <div class="row">
                     <div class="col-md-6 p-3 w-100 h-100">
                       <img src="https://cdn.pixabay.com/photo/2017/08/10/14/09/restaurant-2623071_960_720.jpg" 
                       class="w-100 shadow-1-strong rounded mb-4"
@@ -71,73 +70,68 @@
                       alt="">
                     </div>
                 </div>
-                <div class="pagination_rounded">
-                  <ul>
-                      <li> <a href="#" class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> Prev </a> </li>
-                      <li><a href="#">1</a> </li>
-                      <li class="hidden-xs"><a href="#">2</a> </li>
-                      <li class="hidden-xs"><a href="#">3</a> </li>
-                      <li class="hidden-xs"><a href="#">4</a> </li>
-                      <li class="hidden-xs"><a href="#">5</a> </li>
-                      <li class="visible-xs"><a href="#">...</a> </li>
-                      <li><a href="#">6</a> </li>
-                      <li><a href="#" class="next"> Next <i class="fa fa-angle-right" aria-hidden="true"></i></a> </li>
-                  </ul>
-              </div>
             </section>
+
             <section class="gallery-burgers">
               <h2>Our burgers</h2>
-              <div class="row" style="height: 350px;">
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2016/03/27/16/54/food-1283108_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
-                </div>
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2018/06/18/20/25/burger-3483290_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
-                </div>
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2014/09/03/15/05/sandwich-434658_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner rounded shadow-1-strong">
+
+                  <div class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2018/06/18/20/25/burger-3483290_960_720.jpg" 
+                      class="d-block w-100"
+                      alt="First slide">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/16/54/food-1283108_960_720.jpg" 
+                      class="d-block w-100"
+                      alt="Second slide">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2019/01/29/20/00/hamburger-3963181_960_720.jpg" 
+                    class="d-block w-100"
+                    alt="Third slide">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2018/06/18/20/25/burger-3483290_960_720.jpg" 
+                      class="d-block w-100"
+                      alt="Fourth slide">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg" 
+                      class="d-block w-100"
+                      alt="Fifth slide">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/08/00/26/food-1081707_960_720.jpg" 
+                    class="d-block w-100"
+                    alt="Sixth slide">
+                  </div>
+
                 </div>
               </div>
-              <div class="row" style="height: 350px;">
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2019/01/29/20/00/hamburger-3963181_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
-                </div>
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
-                </div>
-                <div class="col-md-4 p-3 w-100 h-100">
-                  <img src="https://cdn.pixabay.com/photo/2015/12/08/00/26/food-1081707_960_720.jpg" 
-                  class="w-100 h-100 shadow-1-strong rounded mb-4"
-                  alt="">
-                </div>
-            </div>
-            <div class="pagination_rounded">
-              <ul>
-                  <li> <a href="#" class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> Prev </a> </li>
-                  <li><a href="#">1</a> </li>
-                  <li class="hidden-xs"><a href="#">2</a> </li>
-                  <li class="hidden-xs"><a href="#">3</a> </li>
-                  <li class="hidden-xs"><a href="#">4</a> </li>
-                  <li class="hidden-xs"><a href="#">5</a> </li>
-                  <li class="visible-xs"><a href="#">...</a> </li>
-                  <li><a href="#">6</a> </li>
-                  <li><a href="#" class="next"> Next <i class="fa fa-angle-right" aria-hidden="true"></i></a> </li>
-              </ul>
-          </div>
+
+                <nav aria-label="...">
+                  <ul class="pagination justify-content-center mt-4">
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="0">1</li>
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="1">2</li>
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="2">3</li>
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="3">4</li>
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="4">5</li>
+                    <li class="page-item page-link" data-target="#carouselExampleSlidesOnly" data-slide-to="5">6</li>
+                  </ul>
+                </nav>
+
             </section>
+
             <section class="gallery-milkshake">
               <h2>Our milkshake</h2>
-              <div class="row" style="height: 650px;">
+              <div class="row">
                 <div class="col-md-4 p-3 w-100 h-100">
                   <img src="https://images.unsplash.com/photo-1542444592-e6880e286bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=311&q=80" 
                   class="w-100 h-100 shadow-1-strong rounded mb-4"
@@ -153,30 +147,33 @@
                   class="w-100 h-100 shadow-1-strong rounded mb-4"
                   alt="">
                 </div>
-            </div>
-            <div class="pagination_rounded">
-              <ul>
-                  <li> <a href="#" class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> Prev </a> </li>
-                  <li><a href="#">1</a> </li>
-                  <li class="hidden-xs"><a href="#">2</a> </li>
-                  <li class="hidden-xs"><a href="#">3</a> </li>
-                  <li class="hidden-xs"><a href="#">4</a> </li>
-                  <li class="hidden-xs"><a href="#">5</a> </li>
-                  <li class="visible-xs"><a href="#">...</a> </li>
-                  <li><a href="#">6</a> </li>
-                  <li><a href="#" class="next"> Next <i class="fa fa-angle-right" aria-hidden="true"></i></a> </li>
-              </ul>
-          </div>
+              </div>
             </section>
         </section>
     </main>
     <footer>
-      <a href="https://github.com/FourneauxThibaut">Thibaut	Fourneaux </a> | 
-      <a href="https://github.com/saralaloux">Sara	Laloux </a> | 
-      <a href="https://github.com/Kaleidosport"> Anthony  Lambert </a> | 
-      <a href="https://github.com/kawtagan"> Romain	Berthaux </a> | 
-      <a href="https://github.com/LudmilaKowalski"> Ludmila Kowalski</a>    
-      <a href="https://github.com/"> <img class="git" src="./assets/images/pngwing.com.png" height="30px" width="30px"> </a>
+      <ul class="flex">
+        <li>
+          <a href="https://github.com/FourneauxThibaut">Thibaut	Fourneaux </a>
+        </li>
+        <li>
+          <a href="https://github.com/saralaloux">Sara	Laloux </a>
+        </li>
+        <li>
+          <a href="https://github.com/Kaleidosport"> Anthony  Lambert </a>
+        </li>
+        <li>
+          <a href="https://github.com/kawtagan"> Romain	Berthaux </a>
+        </li>
+        <li>
+          <a href="https://github.com/LudmilaKowalski"> Ludmila Kowalski </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p>&copy; Wood's Burgers - 2021</p>
+        </li>
+      </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

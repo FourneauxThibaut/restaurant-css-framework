@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #f08c2b;
+  font-size: 5rem;
+  margin-top: 60px;
+  text-align: center;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,8 +27,9 @@ header {
 }
 
 header .logo {
-  max-height: 45px;
-  margin: 15px 10px 15px 0;
+  width: 240px;
+  height: auto;
+  margin: 20px 70px 15px 0;
 }
 
 header .navbar {
@@ -52,7 +62,7 @@ header .active {
 
 main .gallery {
   width: 90%;
-  margin: 60px auto;
+  margin: 30px auto;
 }
 
 main .gallery h2 {
@@ -65,85 +75,32 @@ main .gallery section {
   margin-bottom: 8vh;
 }
 
-main .gallery section div > div {
-  overflow: hidden;
+main .gallery img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
 }
 
-main .gallery section div > div img {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+main .gallery img:hover {
+  -webkit-transform: scale(1.06) !important;
+          transform: scale(1.06) !important;
+  -webkit-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
 }
 
-main .gallery section div > div img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+main .gallery .gallery-environment img {
+  height: 320px !important;
 }
 
-.pagination_rounded,
-.pagination_square {
-  display: inline-block;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .gallery .gallery-burgers img {
+  height: 450px !important;
 }
 
-.pagination_rounded ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.pagination_rounded ul li {
-  float: left;
-  margin-left: 20px;
-}
-
-.pagination_rounded ul li a {
-  float: left;
-  color: #f08c2b;
-  border-radius: 50%;
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 40px;
-  border: 2px solid #e0e0e0;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.pagination_rounded ul li a:hover {
-  background-color: #f08c2b;
-  color: #fff;
-  border: 2px solid #f08c2b;
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
-}
-
-.pagination_rounded li:first-child {
-  margin-left: 0px;
-}
-
-.pagination_rounded .prev {
-  margin-left: 0px;
-  border-radius: 35px;
-  width: 90px;
-  height: 34px;
-  line-height: 34px;
-}
-
-.pagination_rounded .next {
-  border-radius: 35px;
-  width: 90px;
-  height: 34px;
-  line-height: 34px;
+main .gallery .gallery-milkshake img {
+  height: 620px !important;
 }
 
 footer {
@@ -154,10 +111,33 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: white;
   background-color: #1d1d1d;
   position: relative;
+}
+
+footer ul, footer ol {
+  list-style: none;
+}
+
+footer dl, footer ol, footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer ul li {
+  margin: 25px 30px;
 }
 
 footer a {
@@ -175,32 +155,13 @@ footer a:hover {
           transition-duration: 0.5s;
 }
 
-footer .git {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: white;
-}
-
 .visible-xs {
   display: none !important;
 }
 
-@media (max-width: 1500px) {
-  .gallery-burgers .row, .gallery-environment .row {
-    height: 300px !important;
-  }
-  .gallery-milkshake .row {
-    height: 600px !important;
-  }
-}
-
-@media (max-width: 1400px) {
-  .gallery-burgers .row, .gallery-environment .row {
-    height: 250px !important;
-  }
-  .gallery-milkshake .row {
-    height: 550px !important;
+@media (max-width: 1335px) {
+  footer ul li {
+    margin: 25px 20px;
   }
 }
 
@@ -214,11 +175,46 @@ footer .git {
   header .nav-item {
     margin: 20px 10px;
   }
-  .gallery-burgers .row, .gallery-environment .row {
-    height: 200px !important;
+}
+
+@media (max-width: 1220px) {
+  footer ul li {
+    margin: 25px 10px;
   }
-  .gallery-milkshake .row {
-    height: 500px !important;
+}
+
+@media (max-width: 1100px) {
+  header .logo {
+    width: 200px;
+    margin: 20px 50px 15px 0;
+  }
+  header .navbar {
+    padding: 0 50px;
+  }
+  header .navbar .navbar-brand {
+    margin-right: 25px;
+  }
+  header .nav-item {
+    margin: 20px 8px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul {
+    margin: 15px;
+  }
+  footer ul li {
+    margin: 8px 10px;
   }
 }
 
@@ -229,12 +225,20 @@ footer .git {
 }
 
 @media (max-width: 767px) {
+  header .logo {
+    width: 180px;
+    margin: 0 10px;
+  }
   main .gallery h2 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 375px) {
+  header .logo {
+    width: 150px;
+    margin: 0 5px;
+  }
   main .gallery h2 {
     font-size: 2rem;
   }
