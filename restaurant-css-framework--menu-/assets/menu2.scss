@@ -1,0 +1,179 @@
+$Vert: #008037;
+$Brun: #7f3e1a;
+$Orange: #f08c2b;
+$Jaune: #f4e038;
+$noir: #1d1d1d;
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+*{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::selection{
+    background-color: $Orange;
+    color: white;
+}
+body{
+    font-size: 62,5%;
+    margin: 0 auto;
+}
+//----------header----------------
+header{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    .navbar{
+        padding: 0 100px;
+
+        .navbar-brand{
+            margin-right: 80px;
+        }
+    }
+
+    .nav-item{
+        margin: 25px 20px;
+    
+        a{
+            color: white; 
+            transition-duration: 0.3s;
+
+            &:hover{
+                color: $Orange;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .active{
+        background-color: $Orange !important;
+    }
+}
+//--------fin du header------------
+
+//-------maintitle----------
+.maintitle{
+        padding-top: 20px;
+    .mainlogo{
+        display: block;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+}
+
+//------menu------------
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+        .mainmenu{
+            border: solid 1px $Vert;
+            padding: 20px;
+            .icons{
+                margin: 0 auto;
+                display: block;
+                width: 50px;
+            }
+            h2{
+                text-align: center;
+                color: $Orange;
+                font-size: 2rem;
+            }
+        }
+}
+
+/*body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+*/
+/*
+main {
+    flex-grow: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 70px 0;
+    height: 500px;
+    width: 640px;
+    padding: 10px;
+    //padding-top: -50px;
+    background-color: white;
+    //box-shadow: 10px 5px 5px black;
+   // border: solid;
+    border-radius: 5%;
+
+}
+*/
+
+
+
+
+
+//----buttons----------
+.bleu {
+    background-color: #7f3e1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jaune {
+    background-color: #f4e038;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green {
+    background-color: #008037;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+//----footer-----------
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    position: relative;
+    
+}
+
+.git {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+}
+footer a{
+    color: white !important;
+    list-style: inherit;
+    text-decoration: inherit !important;
+    padding: 0px 10px;
+  }
+
+
+
+
+
+
+
