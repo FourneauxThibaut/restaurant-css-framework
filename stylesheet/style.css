@@ -3,7 +3,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(255, 210, 194);
+  background-color: rgb(253, 239, 235);
 }
 .upBlock {
   display: flex;
