@@ -2,8 +2,8 @@
 
 **Contributors :** [Thibaut Fourneaux](https://github.com/FourneauxThibaut), [Anthony Lambert](https://github.com/Kaleidosport), [Sara Laloux](https://github.com/saralaloux), [Romain Berthaux](https://github.com/kawtagan) and [Ludmila Kowalski](https://github.com/LudmilaKowalski).  
 **Context :** Group assignment pertaining to the Junior WebDev's training provided by [BeCode](https://github.com/becodeorg).  
-**End product :** [Wood's Burger](https://fourneauxthibaut.github.io/restaurant-css-framework/).  
-**Last update :** September 8th 2021.  
+**End product :** [Wood's Burgers](https://fourneauxthibaut.github.io/restaurant-css-framework/).  
+**Last update :** September 9th 2021.  
 
 ## Learning objectives  
 
