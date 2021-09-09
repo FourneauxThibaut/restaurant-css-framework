@@ -19,10 +19,18 @@ body{
     font-size: 62,5%;
     margin: 0 auto;
 }
-//----------header----------------
+
 header{
     font-weight: bold;
     font-size: 1.2rem;
+    color: white;
+    background-color: $noir;
+
+    .logo{
+        width: 240px;
+        height: auto;
+        margin: 20px 70px 15px 0;
+    }
 
     .navbar{
         padding: 0 100px;
@@ -51,6 +59,44 @@ header{
     }
 }
 //--------fin du header------------
+.menu{
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column !important;
+
+    hr{
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    h2{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .articlemenu{
+        margin-top: 15px;
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        article{
+            width: 40%;
+            margin-bottom: 50px;
+        }
+    }
+    table{
+        td{
+            padding: 0 15px;
+        }
+        th{
+            padding: 0 15px;
+        }
+    }
+}
 .maintitle{
     padding-top: 20px;
         .mainlogo{
@@ -66,14 +112,15 @@ header{
     }
 
     .mainmenu{
-        border: solid 1px $Vert;
+        border: solid 2px $Vert !important;
+        border-radius: 5px;
         padding: 20px;
         margin-top: 20px;
         .icons{
             margin: 0 auto;
             display: block;
         }
-        h2{
+        h3{
             text-align: center;
             color: $Orange;
         }
@@ -110,7 +157,7 @@ header{
             .icons{
                 width: 40px;
             }
-            h2{
+            h3{
                 font-size: 1.5rem;
             }
         }
@@ -229,25 +276,158 @@ header{
 
 
 //----footer-----------
+
 footer {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    justify-content: space-evenly;
     color: white;
-    background-color: black;
+    background-color: $noir;
     position: relative;
     
+    ul, ol{
+        list-style: none;
+    }
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        li{
+            margin: 25px 30px;
+        }
+    }
+
+    a{
+        color: white !important;
+        list-style: inherit;
+        text-decoration: inherit !important;
+        padding: 0px 10px;
+        transition-duration: 0.3s;
+
+        &:hover{
+            color: $Orange !important;
+            transition-duration: 0.5s;
+        }
+    }
 }
 
-.git {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: white;
+.visible-xs {
+    display: none !important
 }
-footer a{
-    color: white !important;
-    list-style: inherit;
-    text-decoration: inherit !important;
-    padding: 0px 10px;
-  }
+
+@media (max-width: 1340px) {
+    .articlemenu{
+        width: 80% !important;
+    }
+    footer{
+        ul{
+            li{
+                margin: 25px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    header{
+
+        .navbar{
+            padding: 0 50px;
+    
+            .navbar-brand{
+                margin-right: 35px;
+            }
+        }
+
+        .nav-item{
+            margin: 20px 10px;
+        }
+    }
+}
+
+@media (max-width: 1220px){
+    footer{
+        ul{
+            li{
+                margin: 25px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .articlemenu{
+        width: 90% !important;
+    }
+
+    header{
+        .logo{
+            width: 200px;
+            margin: 20px 50px 15px 0;
+        }
+        .navbar{
+            padding: 0 50px;
+    
+            .navbar-brand{
+                margin-right: 25px;
+            }
+        }
+
+        .nav-item{
+            margin: 20px 8px;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        .flex{
+            flex-direction: column;
+        }
+
+        ul{
+
+            margin: 15px;
+
+            li{
+                margin: 8px 10px;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .articlemenu{
+        flex-direction: column !important;
+
+        article{
+            width: 65% !important;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    header{
+        .logo{
+            width: 180px;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        .logo{
+            width: 150px;
+            margin: 0 5px;
+        }
+    }
+}

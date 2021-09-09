@@ -68,6 +68,14 @@ body {
 header {
   font-weight: bold;
   font-size: 1.2rem;
+  color: white;
+  background-color: #1d1d1d;
+}
+
+header .logo {
+  width: 240px;
+  height: auto;
+  margin: 20px 70px 15px 0;
 }
 
 header .navbar {
@@ -98,6 +106,58 @@ header .active {
   background-color: #f08c2b !important;
 }
 
+.menu {
+  padding: 30px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.menu hr {
+  width: 92%;
+  margin: 20px auto;
+}
+
+.menu h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.menu .articlemenu {
+  margin-top: 15px;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu .articlemenu article {
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.menu table td {
+  padding: 0 15px;
+}
+
+.menu table th {
+  padding: 0 15px;
+}
+
 .maintitle {
   padding-top: 20px;
 }
@@ -116,7 +176,8 @@ header .active {
 }
 
 .mainmenu {
-  border: solid 1px #008037;
+  border: solid 2px #008037 !important;
+  border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
 }
@@ -126,7 +187,7 @@ header .active {
   display: block;
 }
 
-.mainmenu h2 {
+.mainmenu h3 {
   text-align: center;
   color: #f08c2b;
 }
@@ -165,7 +226,7 @@ header .active {
   .menu .mainmenu .icons {
     width: 40px;
   }
-  .menu .mainmenu h2 {
+  .menu .mainmenu h3 {
     font-size: 1.5rem;
   }
   .menu table td {
@@ -283,17 +344,33 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: white;
-  background-color: black;
+  background-color: #1d1d1d;
   position: relative;
 }
 
-.git {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: white;
+footer ul, footer ol {
+  list-style: none;
+}
+
+footer dl, footer ol, footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer ul li {
+  margin: 25px 30px;
 }
 
 footer a {
@@ -301,4 +378,108 @@ footer a {
   list-style: inherit;
   text-decoration: inherit !important;
   padding: 0px 10px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
+
+footer a:hover {
+  color: #f08c2b !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.visible-xs {
+  display: none !important;
+}
+
+@media (max-width: 1340px) {
+  .articlemenu {
+    width: 80% !important;
+  }
+  footer ul li {
+    margin: 25px 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  header .navbar {
+    padding: 0 50px;
+  }
+  header .navbar .navbar-brand {
+    margin-right: 35px;
+  }
+  header .nav-item {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 1220px) {
+  footer ul li {
+    margin: 25px 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .articlemenu {
+    width: 90% !important;
+  }
+  header .logo {
+    width: 200px;
+    margin: 20px 50px 15px 0;
+  }
+  header .navbar {
+    padding: 0 50px;
+  }
+  header .navbar .navbar-brand {
+    margin-right: 25px;
+  }
+  header .nav-item {
+    margin: 20px 8px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul {
+    margin: 15px;
+  }
+  footer ul li {
+    margin: 8px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .articlemenu {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .articlemenu article {
+    width: 65% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  header .logo {
+    width: 180px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  header .logo {
+    width: 150px;
+    margin: 0 5px;
+  }
+}
+/*# sourceMappingURL=menu2.css.map */
