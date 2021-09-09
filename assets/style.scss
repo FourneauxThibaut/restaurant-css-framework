@@ -15,12 +15,21 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 .main-title{
     margin: 10px 0 50px 0;
 }
+.carousel-item{
+    height: 55vh;
+}
 .carousel{
     margin: 0 auto;
-    width: 90%;
+    width: 70% !important;
+
+    img{
+        height: auto;
+        width: 100%;
+        object-fit: cover !important;
+        transform: translateY(-25%);
+    }
 }
 .carousel-inner{
-
     .title{
         color: $green;
         font-size: 7rem;
@@ -43,6 +52,24 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 
 
   //---------responsive-----------
+
+
+@media only screen and (max-width: 1200px){
+    .carousel{
+
+        img{
+            transform: translateY(-10%) !important;
+        }
+    }
+}
+@media only screen and (max-width: 1000px){
+    .carousel{
+
+        img{
+            transform: translateY(0) !important;
+        }
+    }
+}
 
 @media only screen and (max-width: 768px){
 
@@ -172,6 +199,7 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 }
 //--------commentaires-----------------
 .comments{
+    width: 72% !important;
     padding: 35px 0;
     display: flex;
     flex-direction: column;
