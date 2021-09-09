@@ -1,0 +1,304 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+* {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-moz-selection {
+  background-color: #f08c2b;
+  color: white;
+}
+
+::selection {
+  background-color: #f08c2b;
+  color: white;
+}
+
+body {
+  font-size: 62,5%;
+  margin: 0 auto;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header .navbar {
+  padding: 0 100px;
+}
+
+header .navbar .navbar-brand {
+  margin-right: 80px;
+}
+
+header .nav-item {
+  margin: 25px 20px;
+}
+
+header .nav-item a {
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+header .nav-item a:hover {
+  color: #f08c2b;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .active {
+  background-color: #f08c2b !important;
+}
+
+.maintitle {
+  padding-top: 20px;
+}
+
+.maintitle .mainlogo {
+  display: block;
+  margin: 0 auto;
+}
+
+.maintitle h1 {
+  text-align: center;
+}
+
+.maintitle p {
+  text-align: center;
+}
+
+.mainmenu {
+  border: solid 1px #008037;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.mainmenu .icons {
+  margin: 0 auto;
+  display: block;
+}
+
+.mainmenu h2 {
+  text-align: center;
+  color: #f08c2b;
+}
+
+@media only screen and (max-width: 600px) {
+  .maintitle h1 {
+    font-size: 1rem;
+  }
+  .maintitle p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    min-width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .menu .mainmenu .icons {
+    width: 40px;
+  }
+  .menu .mainmenu h2 {
+    font-size: 1.5rem;
+  }
+  .menu table td {
+    width: 120%;
+  }
+  .menu table th {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .maintitle h1 {
+    font-size: 2rem;
+  }
+  .maintitle p {
+    font-size: 1rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    min-width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .menu .mainmenu .icons {
+    width: 40px;
+  }
+  .menu .mainmenu h2 {
+    font-size: 1.5rem;
+  }
+  .menu table td {
+    width: 120%;
+  }
+  .menu table th {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .maintitle p {
+    font-size: 1.5rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .menu .mainmenu {
+    border: solid 1px #008037;
+    padding: 20px;
+  }
+  .menu .mainmenu .icons {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+  }
+  .menu .mainmenu h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 2rem;
+  }
+}
+
+.bleu {
+  background-color: #7f3e1a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jaune {
+  background-color: #f4e038;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green {
+  background-color: #008037;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  position: relative;
+}
+
+.git {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+
+footer a {
+  color: white !important;
+  list-style: inherit;
+  text-decoration: inherit !important;
+  padding: 0px 10px;
+}
