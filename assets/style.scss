@@ -63,6 +63,113 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
         }
     }
 }
+@media only screen and (max-width:600px){
+    .comments{
+        flex-direction: column !important;
+
+        article{
+            padding: 30px;
+            margin: 20px;
+            border: solid 1px $green;
+
+            h2{
+              text-align: center;
+              color: $orange;
+              font-size: 1rem;
+            }
+        }
+    } 
+}
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .comments{
+        flex-direction: column !important;
+
+        article{
+            padding: 30px;
+            margin: 20px;
+            border: solid 1px $green;
+
+            h2{
+              text-align: center;
+              color: $orange;
+              font-size: 2rem;
+            }
+        }
+    }
+
+    .main-title{
+        text-align: center;
+        display: block;
+                h1{
+                color: $green;
+                font-size: 3rem;
+                font-family: 'Dancing Script', cursive;
+                padding-top: 20px;
+                }
+
+                h2{
+                font-size: 1.5rem;
+                color: black;
+                }
+
+        }
+//--------commentaires-----------------
+  /*  .comments{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }*/
+
+    .logo-title{
+        width: 15%;
+        margin: 0 auto;
+    }
+
+    }
+@media only screen and (min-width: 800px){
+
+    .comments{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+
+        article{
+            padding: 30px;
+            margin: 20px;
+            border: solid 1px $green;
+
+            h2{
+                text-align: center;
+                color: $orange;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .main-title{
+        text-align: center;
+            h1{
+                color: $green;
+            font-size: 5rem;
+            font-family: 'Dancing Script', cursive;
+            padding-top: 20px;
+            }
+
+            h2{
+            font-size: 1.5rem;
+            color: black;
+            }
+    }
+}
 //--------commentaires-----------------
 .comments{
     padding: 35px 0;

@@ -89,6 +89,117 @@ td, th {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .comments {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .comments article {
+    padding: 30px;
+    margin: 20px;
+    border: solid 1px #008037;
+  }
+  .comments article h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .comments {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .comments article {
+    padding: 30px;
+    margin: 20px;
+    border: solid 1px #008037;
+  }
+  .comments article h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 2rem;
+  }
+  .main-title {
+    text-align: center;
+    display: block;
+  }
+  .main-title h1 {
+    color: #008037;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+  }
+  .main-title h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  /*  .comments{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }*/
+  .logo-title {
+    width: 15%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .comments {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .comments article {
+    padding: 30px;
+    margin: 20px;
+    border: solid 1px #008037;
+  }
+  .comments article h2 {
+    text-align: center;
+    color: #f08c2b;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main-title h1 {
+    color: #008037;
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+  }
+  .main-title h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
 .comments {
   padding: 35px 0;
   display: -webkit-box;
