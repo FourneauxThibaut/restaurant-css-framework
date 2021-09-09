@@ -17,7 +17,7 @@
 Team member | In charge of
 ----------- | ------------
 Thibaut | Pictures page & Github repository
-Anthony | Our restaurants page
+Anthony | Our restaurants page & README
 Sara | Welcome & Menu pages
 Romain | Contact page
 Ludmila | Menu page   
