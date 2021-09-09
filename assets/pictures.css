@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 h1 {
-  font-family: 'Dancing Script', cursive;
-  color: #f08c2b;
-  font-size: 5rem;
-  margin-top: 60px;
-  text-align: center;
+  color: #f08c2b !important;
 }
 
 * {

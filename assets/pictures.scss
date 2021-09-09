@@ -6,11 +6,7 @@ $noir: #2b2b2b;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 h1{
-    font-family: 'Dancing Script', cursive;
-    color: $Orange;
-    font-size: 5rem;
-    margin-top: 60px;
-    text-align: center;
+    color: $Orange !important;
 }
 
 *{
